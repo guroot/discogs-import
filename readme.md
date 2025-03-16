@@ -15,8 +15,8 @@ This script allows you to **import albums into Discogs** from a CSV file, ensuri
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/discogs_importer.git
-cd discogs_importer
+git clone https://github.com/guroot/discogs-import.git
+cd discogs-import
 ```
 
 ### 2️⃣ Install Dependencies
@@ -46,23 +46,28 @@ pip install -r requirements.txt
 
 ### **1️⃣ Import from the Default CSV File**
 ```sh
-python discogs_importer.py
+python import.py
 ```
+or
+```
+python3 import.py 
+```
+
 👉 This will **use `discogs_export.csv` by default**.
 
 ### **2️⃣ Import from a Custom CSV File**
 ```sh
-python discogs_importer.py my_collection.csv
+python import.py my_collection.csv
 ```
 👉 Replace `my_collection.csv` with your own CSV export.
 
 ### **3️⃣ View Help Message**
 ```sh
-python discogs_importer.py --help
+python import.py --help
 ```
 👉 Displays:
 ```
-usage: discogs_importer.py [csv_file]
+usage: import.py [csv_file]
 
 Import albums into Discogs from a CSV file.
 
