@@ -11,7 +11,12 @@ This script allows you to **import albums into Discogs** from a CSV file, ensuri
 
 ---
 
-## 🛠 Installation
+## 🫠 Installation
+
+### ⚠️ Requirements
+- **Python 3.13+ is required**.
+- A **Discogs API token** (see configuration section).
+- `pip` and `venv` installed.
 
 ### 1️⃣ Clone the Repository
 ```sh
@@ -19,14 +24,20 @@ git clone https://github.com/guroot/discogs-import.git
 cd discogs-import
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Set Up a Virtual Environment (Recommended)
+```sh
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
 👉 **This will install the latest `discogs_client` from GitHub**, as well as `pandas` for CSV handling.
 
-### 3️⃣ Set Up Configuration
+### 4️⃣ Set Up Configuration
 1. **Create a `config.ini` file** in the project directory:
    
    ```ini
@@ -50,7 +61,7 @@ python import.py
 ```
 or
 ```
-python3 import.py 
+python3 import.py
 ```
 
 👉 This will **use `discogs_export.csv` by default**.
@@ -94,8 +105,6 @@ release_id,Label,Title
 ```
 
 ---
-
-
 
 ## 👨‍💻 Contribution
 Feel free to submit **pull requests** or open an **issue** if you find bugs or want to suggest improvements. 🎵
