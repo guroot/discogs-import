@@ -1,0 +1,2 @@
+git+https://github.com/joalla/discogs_client.git
+pandas
