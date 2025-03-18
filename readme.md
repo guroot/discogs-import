@@ -56,10 +56,6 @@ pip install -r requirements.txt
 ## 🎯 Usage
 
 ### **1️⃣ Import from the Default CSV File**
-```sh
-python import.py
-```
-or
 ```
 python3 import.py
 ```
@@ -68,13 +64,13 @@ python3 import.py
 
 ### **2️⃣ Import from a Custom CSV File**
 ```sh
-python import.py my_collection.csv
+python3 import.py my_collection.csv
 ```
 👉 Replace `my_collection.csv` with your own CSV export.
 
 ### **3️⃣ View Help Message**
 ```sh
-python import.py --help
+python3 import.py --help
 ```
 👉 Displays:
 ```
